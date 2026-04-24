@@ -3,21 +3,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 /* BODY */
 body {
-    background-color: #f5f7fa;
+    background: #f4f6f9;
     color: #333;
-    line-height: 1.6;
 }
 
 /* HEADER */
 header {
-    background: #111827;
+    background: linear-gradient(90deg, #0f172a, #1e293b);
     color: #fff;
     padding: 20px 40px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,13 +45,13 @@ section {
     margin: auto;
 }
 
-/* INTRO */
+/* TITLES */
 h2 {
     margin-bottom: 10px;
 }
 
 p {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
 /* PROJECT CARD */
@@ -60,7 +60,7 @@ p {
     padding: 25px;
     border-radius: 12px;
     margin-top: 20px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 /* SCREENSHOT GRID */
@@ -71,7 +71,7 @@ p {
     margin-top: 20px;
 }
 
-/* EACH CARD */
+/* CARD */
 .shot {
     background: #fff;
     border-radius: 12px;
@@ -79,26 +79,22 @@ p {
     position: relative;
     cursor: pointer;
 
-    /* SHADOW */
     box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-
-    /* ANIMATION */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* HOVER CARD */
 .shot:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.25);
 }
 
 /* IMAGE */
 .shot img {
     width: 100%;
-    height: 180px;
+    height: 170px;
     object-fit: cover;
 
-    /* ZOOM EFFECT */
     transition: transform 0.4s ease;
 }
 
@@ -112,23 +108,23 @@ p {
     position: absolute;
     bottom: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.75);
+
+    background: rgba(0, 0, 0, 0.8);
     color: #fff;
     padding: 10px;
     font-size: 14px;
     text-align: center;
 
-    /* SMOOTH FADE */
     opacity: 0;
     transition: opacity 0.3s ease;
 }
 
-/* SHOW TEXT ON HOVER */
+/* SHOW TEXT */
 .shot:hover p {
     opacity: 1;
 }
 
-/* LIST STYLING */
+/* LIST */
 ul {
     margin-top: 15px;
     padding-left: 20px;
@@ -138,23 +134,22 @@ ul li {
     margin-bottom: 8px;
 }
 
-/* BUTTON LINKS */
+/* BUTTON */
 a.button {
     display: inline-block;
     margin-top: 10px;
-    padding: 8px 15px;
+    padding: 8px 14px;
     background: #2563eb;
     color: #fff;
     border-radius: 6px;
     text-decoration: none;
-    font-size: 14px;
 }
 
 a.button:hover {
     background: #1d4ed8;
 }
 
-/* RESPONSIVE */
+/* MOBILE */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
