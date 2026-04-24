@@ -3,24 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muthu Selvambiga | Backend Developer</title>
+    <title>Muthu Selvambiga Portfolio</title>
+
+    <!-- IMPORTANT: CSS LINK -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+<!-- HEADER -->
 <header>
     <h1>Muthu Selvambiga</h1>
     <nav>
-        <a href="#home">Home</a>
+        <a href="#">Home</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
     </nav>
 </header>
 
-<!-- HERO -->
-<section id="home" class="hero">
-    <h2>Hi, I'm Ambiga 👋</h2>
+<!-- INTRO -->
+<section>
+    <h2>Hi, I'm Muthu 👋</h2>
     <h3>.NET Backend Developer</h3>
     <p>
         Backend Developer with 1.5 years of experience in .NET, specializing in ASP.NET Core Web API development.
@@ -28,69 +32,45 @@
         Currently exploring Go for backend systems.
     </p>
 
-    <div class="badges">
-        <span>.NET Core</span>
-        <span>Web API</span>
-        <span>SQL Server</span>
-        <span>Go</span>
-        <span>REST</span>
-    </div>
+    <p><strong>.NET Core | Web API | SQL Server | Go | REST</strong></p>
 </section>
 
 <!-- PROJECTS -->
-<section id="projects" class="section">
+<section id="projects">
     <h2>Projects</h2>
 
     <!-- DRMED PROJECT -->
     <div class="project-card">
         <h3>DrMed - Healthcare System</h3>
-        <p>
-            Role-based backend system for managing doctors, patients, and appointments.
-        </p>
+        <p>Role-based backend system for managing doctors, patients, and appointments.</p>
 
-        <!-- 🔥 Screenshot Section -->
-        <h4 class="section-title">API Flow & Outputs</h4>
+        <h4>API Flow & Outputs</h4>
 
-        <div class="shots-grid">
+        <div class="screenshots">
 
             <div class="shot">
-                <img src="images/login.png" alt="Login API">
-                <div class="shot-content">
-                    <h5>Authentication</h5>
-                    <p>Login API generates JWT token.</p>
-                </div>
+                <img src="images/login.png" alt="Login">
+                <p>JWT Authentication (Login API)</p>
             </div>
 
             <div class="shot">
                 <img src="images/authorize.png" alt="Authorize">
-                <div class="shot-content">
-                    <h5>Authorization</h5>
-                    <p>JWT token used to access secured endpoints.</p>
-                </div>
+                <p>Authorization using JWT Token</p>
             </div>
 
             <div class="shot">
-                <img src="images/createappointment.png" alt="Create Appointment">
-                <div class="shot-content">
-                    <h5>Create Appointment</h5>
-                    <p>POST API for booking appointment.</p>
-                </div>
+                <img src="images/createappointment.png" alt="Create">
+                <p>Create Appointment API</p>
             </div>
 
             <div class="shot">
-                <img src="images/getappointments.png" alt="Get Appointments">
-                <div class="shot-content">
-                    <h5>Fetch Data</h5>
-                    <p>Retrieve appointments using GET API.</p>
-                </div>
+                <img src="images/getappointments.png" alt="Get">
+                <p>Fetch Appointments (GET API)</p>
             </div>
 
             <div class="shot">
-                <img src="images/sameslotnotavailable.png" alt="Slot Conflict">
-                <div class="shot-content">
-                    <h5>Validation Logic</h5>
-                    <p>Prevents double booking (slot conflict).</p>
-                </div>
+                <img src="images/sameslotnotavailable.png" alt="Validation">
+                <p>Validation: Prevents double booking</p>
             </div>
 
         </div>
@@ -102,55 +82,42 @@
             <li>Built with ASP.NET Core & EF Core</li>
         </ul>
 
-        <p class="note">
-            Implements secure authentication, role-based access control,
-            and business validation to prevent duplicate bookings.
-        </p>
-
-        <a href="https://github.com/MuthuSelvambiga/DrMed-APP" target="_blank">View Code →</a>
+        <a href="#" class="button">View Code</a>
     </div>
 
-    <!-- TOY RENTAL -->
+    <!-- GO PROJECT -->
     <div class="project-card">
         <h3>Toy Rental App (Go)</h3>
-        <p>
-            Backend system for toy rental with availability tracking.
-        </p>
+        <p>Backend system for toy rental with availability tracking.</p>
+
         <ul>
             <li>REST API using Go (net/http)</li>
-            <li>JSON-based request/response handling</li>
+            <li>JSON request/response handling</li>
             <li>Rental and return workflow logic</li>
         </ul>
-        <a href="https://github.com/MuthuSelvambiga/toy-rental-api" target="_blank">View Code →</a>
-    </div>
 
+        <a href="#" class="button">View Code</a>
+    </div>
 </section>
 
 <!-- SKILLS -->
-<section id="skills" class="section">
+<section id="skills">
     <h2>What I Focus On</h2>
-
-    <div class="skills-grid">
-        <div>Clean API Design</div>
-        <div>Authentication & Security</div>
-        <div>Database Management</div>
-        <div>Backend Performance</div>
-        <div>REST Architecture</div>
-        <div>Scalable Systems</div>
-    </div>
+    <p>
+        Clean API Design<br>
+        Authentication & Security<br>
+        Database Management<br>
+        Backend Performance<br>
+        REST Architecture
+    </p>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section">
+<section id="contact">
     <h2>Contact</h2>
-    <p>Email: selvambiga97@gmail.com</p>
-    <p>GitHub: github.com/MuthuSelvambiga</p>
-    <p>LinkedIn: linkedin.com/in/selvambiga</p>
+    <p>Email: your-email@gmail.com</p>
+    <p>LinkedIn: your-linkedin-link</p>
 </section>
-
-<footer>
-    <p>© 2026 Muthu Selvambiga</p>
-</footer>
 
 </body>
 </html>
