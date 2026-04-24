@@ -2,16 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muthu Selvambiga Portfolio</title>
-
-    <!-- IMPORTANT: CSS LINK -->
+    <title>Muthu Selvambiga | Backend Developer</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<!-- HEADER -->
+<!-- NAVBAR -->
 <header>
     <h1>Muthu Selvambiga</h1>
     <nav>
@@ -22,101 +18,119 @@
     </nav>
 </header>
 
-<!-- INTRO -->
-<section>
-    <h2>Hi, I'm Muthu 👋</h2>
-    <h3>.NET Backend Developer</h3>
-    <p>
-        Backend Developer with 1.5 years of experience in .NET, specializing in ASP.NET Core Web API development.
-        I build scalable APIs, handle secure authentication, and work with SQL Server.
-        Currently exploring Go for backend systems.
-    </p>
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <h2>Backend Developer (.NET)</h2>
 
-    <p><strong>.NET Core | Web API | SQL Server | Go | REST</strong></p>
+        <p>
+            I build secure, scalable backend systems using ASP.NET Core and SQL Server.
+            Experienced in designing REST APIs, implementing JWT authentication,
+            and solving real-world problems like booking conflicts and data consistency.
+        </p>
+
+        <div class="tags">
+            <span>.NET Core</span>
+            <span>Web API</span>
+            <span>SQL Server</span>
+            <span>Go</span>
+            <span>REST</span>
+        </div>
+    </div>
 </section>
 
 <!-- PROJECTS -->
-<section id="projects">
+<section id="projects" class="section">
     <h2>Projects</h2>
 
     <!-- DRMED PROJECT -->
     <div class="project-card">
-        <h3>DrMed - Healthcare System</h3>
-        <p>Role-based backend system for managing doctors, patients, and appointments.</p>
+        <h3>DrMed – Healthcare Appointment System</h3>
 
-        <h4>API Flow & Outputs</h4>
+        <p>
+            Role-based backend system for managing doctors, patients, and appointments.
+            Prevents double booking using slot validation logic.
+        </p>
 
         <div class="screenshots">
 
             <div class="shot">
-                <img src="images/login.png" alt="Login">
-                <p>JWT Authentication (Login API)</p>
+                <img src="images/login.png">
+                <span>Login & JWT</span>
             </div>
 
             <div class="shot">
-                <img src="images/authorize.png" alt="Authorize">
-                <p>Authorization using JWT Token</p>
+                <img src="images/authorize.png">
+                <span>Authorization</span>
             </div>
 
             <div class="shot">
-                <img src="images/createappointment.png" alt="Create">
-                <p>Create Appointment API</p>
+                <img src="images/createappointment.png">
+                <span>Create Appointment</span>
             </div>
 
             <div class="shot">
-                <img src="images/getappointments.png" alt="Get">
-                <p>Fetch Appointments (GET API)</p>
+                <img src="images/getappointments.png">
+                <span>Fetch Data</span>
             </div>
 
             <div class="shot">
-                <img src="images/sameslotnotavailable.png" alt="Validation">
-                <p>Validation: Prevents double booking</p>
+                <img src="images/sameslotnotavailable.png">
+                <span>Validation</span>
             </div>
 
         </div>
 
-        <ul>
-            <li>JWT Authentication & Role-based Access</li>
-            <li>Secure password hashing (BCrypt)</li>
-            <li>Slot-based booking with conflict handling</li>
-            <li>Built with ASP.NET Core & EF Core</li>
-        </ul>
-
-        <a href="#" class="button">View Code</a>
+        <!-- ✅ ADDED VIEW CODE -->
+        <a href="https://github.com/MuthuSelvambiga/portfolio" target="_blank" class="btn">
+            View Code
+        </a>
     </div>
 
     <!-- GO PROJECT -->
     <div class="project-card">
-        <h3>Toy Rental App (Go)</h3>
-        <p>Backend system for toy rental with availability tracking.</p>
+        <h3>Toy Rental Backend (Go)</h3>
+
+        <p>
+            REST API built using Go for managing toy rentals with availability tracking.
+        </p>
 
         <ul>
-            <li>REST API using Go (net/http)</li>
+            <li>REST APIs using Go (net/http)</li>
             <li>JSON request/response handling</li>
-            <li>Rental and return workflow logic</li>
+            <li>Rental & return workflow logic</li>
         </ul>
 
-        <a href="#" class="button">View Code</a>
+        <a href="https://github.com/MuthuSelvambiga" target="_blank" class="btn">
+            View Code
+        </a>
     </div>
+
 </section>
 
 <!-- SKILLS -->
-<section id="skills">
+<section id="skills" class="section dark-section">
     <h2>What I Focus On</h2>
-    <p>
-        Clean API Design<br>
-        Authentication & Security<br>
-        Database Management<br>
-        Backend Performance<br>
-        REST Architecture
-    </p>
+
+    <div class="skills-grid">
+        <div class="skill-card">REST API Development</div>
+        <div class="skill-card">Authentication & Authorization</div>
+        <div class="skill-card">Database Design</div>
+        <div class="skill-card">CRUD Operations</div>
+        <div class="skill-card">Entity Framework Core</div>
+         <div class="skill-card">API Testing (Postman)</div>
+        <div class="skill-card">Git & Version Control</div>
+        <div class="skill-card">Go (Basics)</div>
+    </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact">
+<section id="contact" class="section">
     <h2>Contact</h2>
-    <p>Email: your-email@gmail.com</p>
-    <p>LinkedIn: your-linkedin-link</p>
+
+    <p>Email: selvambiga97@gmail.com</p>
+    <p>GitHub: github.com/MuthuSelvambiga</p>
+    <p>LinkedIn: www.linkedin.com/in/selvambiga</p>
 </section>
 
 </body>
